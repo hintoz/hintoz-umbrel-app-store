@@ -34,10 +34,19 @@ gallery:
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-auto-mcs/img/2.jpg
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-auto-mcs/img/3.jpg
 releaseNotes: >-
-  This version introduces major stability improvements and numerous bug fixes, including a new logging engine, enhanced PlayIt integration, and a switch to Paper’s Hangar for plugin management. 
-  
-  
-  It also improves add-on installation, resolves several Linux and ARM issues, and enhances overall reliability.
+  > Hotfix for v2.3.6/7 to improve support for Minecraft 26.x
+
+  Welcome to auto-mcs v2.3.7! This version is a major feature, integration, and stability update over v2.3.5. Some of the highlights include:
+
+  - Added preliminary support for Minecraft 26.x, there may still be issues with this as it hasn't released
+  - Refactored the Playit integration with official account linking and 3rd party support, more features to come!
+  - Added a new Cloud Backup amscript for implementing automated backup syncing to cloud providers
+  - Upgraded amscript to v1.6 with new capabilities such as @server.on_output and reworked the IDE
+  - Improved runtime including support for Java 25, and distributions like Adoptium, GraalVM, and many more
+  - Fixed a wide range of issues including window drawing, app migration, addons, and many other bugs
+  - Added new headless debug/logging environment for convenience with troubleshooting
+
+  I am grateful to the community who helped improve this project through testing, feedback, and contributions. Hope you enjoy this update!
 dependencies: []
 path: ""
 defaultUsername: "root"
