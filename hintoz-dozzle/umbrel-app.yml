@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: denny-dozzle
+id: hintoz-dozzle
 name: Dozzle
 tagline: A realtime log viewer for Docker containers
 icon: https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/logo.png
