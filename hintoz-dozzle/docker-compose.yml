@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-dozzle_web_1
+      APP_PORT: 8080
+
+  web:
+    image: amir20/dozzle:v10.6.10@sha256:fbcc62082e2b975992c0161f3eaecf8ff881eddaa95fc2faed2d0e34732c1324
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: on-failure

@@ -4,7 +4,8 @@
 
 | No. | Logo | App-Name | Description | Port |
 | :---: | :---: | :-- | :-- | :---: |
-| 1 | <img height="30" src="https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/refs/heads/master/hintoz-auto-mcs/img/logo.png" /> | [Auto-MCS](https://github.com/macarooni-man/auto-mcs) | A cross-platform Minecraft server manager | 8439 |
+| 1 | <img height="30" src="https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-auto-mcs/img/logo.png" /> | [Auto-MCS](https://github.com/macarooni-man/auto-mcs) | A cross-platform Minecraft server manager | 8439 |
+| 2 | <img height="30" src="https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/logo.png" /> | [Dozzle](https://github.com/amir20/dozzle) | A realtime log viewer for Docker containers | 8558 |
 
 ##
 
