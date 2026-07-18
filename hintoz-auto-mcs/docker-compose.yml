@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
 
   app:
-    image: macarooniman/auto-mcs:2.3.8@sha256:45cf441282f403379c1086a78a4711b044bbc5b6ee192439369b523e2f78ffd7
+    image: macarooniman/auto-mcs:2.3.9@sha256:6e4762c256a31bda9725f1f0b43cbcfe8484462bd47debb823e5fb8ee933e362
     command: [
       "auto-mcs-ttyd",
       "-W",
@@ -30,3 +30,4 @@ services:
     ports:
       - "7001:7001"
       - "25565:25565"
+      - '19132:19132'

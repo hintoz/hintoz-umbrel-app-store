@@ -4,7 +4,7 @@ name: Auto-MCS
 tagline: A cross-platform Minecraft server manager
 icon: https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-auto-mcs/img/logo.png
 category: gaming
-version: "2.3.8"
+version: "2.3.9"
 port: 8439
 description: >-
   ⛏️ Auto-MCS is an advanced management tool designed to simplify the creation and operation of Minecraft servers. It automates nearly every aspect of server setup, from downloading and configuring the required files to managing updates, backups, and plugins. The application allows users to deploy new servers within minutes while handling all the complex tasks such as version control, mod and plugin installation, and configuration management in the background.
@@ -34,17 +34,16 @@ gallery:
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-auto-mcs/img/2.jpg
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-auto-mcs/img/3.jpg
 releaseNotes: >-
-  > Hotfix for v2.3.6/7 to improve support for Minecraft 26.x
+  ⚠️ Stability and security update for v2.3.8
 
-  Welcome to auto-mcs v2.3.7! This version is a major feature, integration, and stability update over v2.3.5. Some of the highlights include:
 
-  - Added preliminary support for Minecraft 26.x, there may still be issues with this as it hasn't released
-  - Refactored the Playit integration with official account linking and 3rd party support, more features to come!
-  - Added a new Cloud Backup amscript for implementing automated backup syncing to cloud providers
-  - Upgraded amscript to v1.6 with new capabilities such as @server.on_output and reworked the IDE
-  - Improved runtime including support for Java 25, and distributions like Adoptium, GraalVM, and many more
-  - Fixed a wide range of issues including window drawing, app migration, addons, and many other bugs
-  - Added new headless debug/logging environment for convenience with troubleshooting
+  Welcome to auto-mcs v2.3.9! This release focuses on security hardening, compatibility improvements, and fixes across server management. Some of the highlights include:
+    - Hardened Modrinth imports, Telepath uploads, and archive extraction
+    - Reworked backup migration and renaming for speed, reliability, and configuration compatibility
+    - Improved modpack detection, template loading, and live ACL handling
+    - Upgraded amscript to v1.6.1 with new updates to several scripts
+    - Updated dependencies and fixed a range of issues involving archives, configuration parsing, and server management
+
 
   I am grateful to the community who helped improve this project through testing, feedback, and contributions. Hope you enjoy this update!
 dependencies: []
