@@ -4,7 +4,7 @@ name: Dozzle
 tagline: A realtime log viewer for Docker containers
 icon: https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/logo.png
 category: networking
-version: "10.6.15"
+version: "10.7.1"
 port: 8558
 description: >-
   Dozzle is a modern, lightweight, web-based application designed for real-time viewing of Docker container logs. It provides developers, DevOps engineers, and system administrators with a simple yet powerful interface to monitor logs from all running containers directly in their browser, without the need for log aggregation, external storage, or complex setup.
@@ -36,21 +36,11 @@ gallery:
 releaseNotes: >-
   🚀 Features
 
-    - analytics: Maximize drawer and export SQL results  -  by @amir20 and Claude Opus 5 in #4871 (3ca08)
+    - Publish optional alpine image variant
 
   🐞 Bug Fixes
 
-    - Revert sidebar collapse animation
-    
-    - Respect custom base paths for built assets
-
-    - Derive jwt signing key from users in a stable order
-
-    - Disambiguate containers with duplicate names across groups
-
-    - cloud: Stream logs from the container start
-
-    - security: Block IPv6 transition addresses in webhook SSRF guard
+    - Stop alpine build from overwriting the latest tag
 dependencies:
 path: ""
 defaultUsername: ""
