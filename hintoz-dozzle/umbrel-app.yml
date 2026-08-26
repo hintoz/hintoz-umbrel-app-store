@@ -4,7 +4,7 @@ name: Dozzle
 tagline: A realtime log viewer for Docker containers
 icon: https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/logo.png
 category: networking
-version: "10.7.1"
+version: "10.7.4"
 port: 8558
 description: >-
   Dozzle is a modern, lightweight, web-based application designed for real-time viewing of Docker container logs. It provides developers, DevOps engineers, and system administrators with a simple yet powerful interface to monitor logs from all running containers directly in their browser, without the need for log aggregation, external storage, or complex setup.
@@ -34,13 +34,32 @@ gallery:
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/2.jpg
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/3.jpg
 releaseNotes: >-
+  10.7.2 - 10.7.4
+  
   🚀 Features
 
-    - Publish optional alpine image variant
+    - Prompt to reload when the UI is older than the server
+    - cloud: Stream windowed container metrics to Dozzle Cloud
+    - cloud: Add GetAlerts to the cloud tool service
+    - cloud: Proxy alert history to the local web layer
+    - logs: Merge Dozzle Cloud alerts into the log stream
+    - logs: Show how long an alert's incident kept firing
+    - logs: Mark alerts in the scroll gutter
 
   🐞 Bug Fixes
 
-    - Stop alpine build from overwriting the latest tag
+    - Don't log an error when docker events listener exits cleanly
+    - logs: Re-enable copy actions in the log context menu
+    - logs: Correct the alert row, and badge the events behind it
+    - logs: Show cloud alerts in the historical log view
+    - logs: Keep event badges through the viewer's re-clone
+    - logs: Stop logging client disconnects as stream errors
+    - logs: Guess level from klog/glog prefix
+    - logs: Guess levels for "::INFO::" and signale style lines
+
+   🏎 Performance
+
+   - logs: Poll Cloud for alerts on a timer, not on every log line
 dependencies:
 path: ""
 defaultUsername: ""
