@@ -1,11 +1,12 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: hintoz-dozzle
+storage:
+  dataRoot: data
+category: networking
 name: Dozzle
+version: "11.1.2"
 tagline: A realtime log viewer for Docker containers
 icon: https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/logo.png
-category: networking
-version: "10.7.4"
-port: 8558
 description: >-
   Dozzle is a modern, lightweight, web-based application designed for real-time viewing of Docker container logs. It provides developers, DevOps engineers, and system administrators with a simple yet powerful interface to monitor logs from all running containers directly in their browser, without the need for log aggregation, external storage, or complex setup.
 
@@ -25,42 +26,40 @@ description: >-
   Dozzle is open source and released under the MIT license, actively maintained and developed by Amir Raminfar. It has gained popularity among the Docker community for its ease of use, clean design, and focus on doing one thing well—log viewing. By stripping away unnecessary complexity, Dozzle provides a seamless and efficient way to monitor container output in real time, making it an excellent tool for both development and production environments.
 developer: Amir Raminfar
 website: https://dozzle.dev/
-submitter: hintoz
-submission: https://github.com/hintoz/hintoz-umbrel-app-store
+dependencies: []
 repo: https://github.com/amir20/dozzle
 support: https://github.com/amir20/dozzle/issues
+port: 8558
 gallery:
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/1.jpg
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/2.jpg
   - https://raw.githubusercontent.com/hintoz/hintoz-umbrel-app-store/master/hintoz-dozzle/img/3.jpg
-releaseNotes: >-
-  10.7.2 - 10.7.4
-  
-  🚀 Features
-
-    - Prompt to reload when the UI is older than the server
-    - cloud: Stream windowed container metrics to Dozzle Cloud
-    - cloud: Add GetAlerts to the cloud tool service
-    - cloud: Proxy alert history to the local web layer
-    - logs: Merge Dozzle Cloud alerts into the log stream
-    - logs: Show how long an alert's incident kept firing
-    - logs: Mark alerts in the scroll gutter
-
-  🐞 Bug Fixes
-
-    - Don't log an error when docker events listener exits cleanly
-    - logs: Re-enable copy actions in the log context menu
-    - logs: Correct the alert row, and badge the events behind it
-    - logs: Show cloud alerts in the historical log view
-    - logs: Keep event badges through the viewer's re-clone
-    - logs: Stop logging client disconnects as stream errors
-    - logs: Guess level from klog/glog prefix
-    - logs: Guess levels for "::INFO::" and signale style lines
-
-   🏎 Performance
-
-   - logs: Poll Cloud for alerts on a timer, not on every log line
-dependencies:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+releaseNotes: >-
+  🚀 Features
+    - Add DOZZLE_DISABLE_SETUP_WIZARD to stop the wizard auto-opening
+    - icons: Add pocket-id, tinyauth and zitadel icons
+    - icons: Add icon for cetusguard
+    - icons: Add icons for programming languages
+    - mcp: OAuth sign-in for MCP clients under simple and oidc auth
+
+  🐞 Bug Fixes
+    - Escape untrusted text in toasts and alert previews
+    - Sort custom groups alphabetically in sidebar
+    - agent: Point duplicate host warning at the docs site
+    - cloud: Show Cloud's reason when a log search is refused
+    - docs: Make the search tokenizer work in the browser
+    - download: Sanitize container names used as zip entry names
+    - events: Log client-side SSE write failures at debug
+    - logs: Cap log line and group size so one huge line can't break the cloud stream. Steadier scroll progress readout
+    - notification: Short breaker on cloud 5xx, report the real breaker reason
+    - search: Escape names in the command palette and scope script-src
+    - ui: Let the image tag use the free space in the container title. Redirect to the new container after an update or recreate
+
+  🏎 Performance
+    - cloud: Trim tool schemas sent to models
+torOnly: false
+submitter: hintoz
+submission: https://github.com/hintoz/hintoz-umbrel-app-store
